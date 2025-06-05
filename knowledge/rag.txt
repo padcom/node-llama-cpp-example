@@ -1,0 +1,15 @@
+Retrieval-Augmented Generation (RAG) to technika łącząca generatywne modele językowe z systemami wyszukiwania informacji.
+
+Zamiast polegać wyłącznie na wiedzy osadzonej w parametrach modelu, RAG działa w dwóch krokach:
+1. Retrieval – wyszukiwanie dokumentów pasujących do zapytania użytkownika, zwykle na podstawie embeddingów semantycznych.
+2. Generation – wygenerowanie odpowiedzi przez LLM z użyciem wyników wyszukiwania jako kontekstu.
+
+Zalety RAG:
+- Aktualność: można zaktualizować wiedzę bez trenowania modelu.
+- Śledzenie źródeł: łatwo wskazać, skąd pochodzi odpowiedź.
+- Mniejszy model może dawać lepsze wyniki dzięki dostępowi do wiedzy zewnętrznej.
+
+RAG może być realizowany lokalnie w Node.js z użyciem:
+- embeddingów (np. OpenAI, Llama.cpp, Instructor)
+- lokalnych modeli językowych (llama-node, Ollama)
+- wektorowych baz danych (np. Qdrant, Chroma, Milvus)
